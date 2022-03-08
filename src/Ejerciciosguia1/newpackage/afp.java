@@ -10,6 +10,7 @@ public class afp {
         afpEmpleador =  0.065;
         salario = 500;
         
-        System.out.println("El trabajador en concepto de empleado, paga a las AFP: " + salario*afpEmpleador);
+        System.out.println("El trabajador en concepto de empleado, paga a las AFP: " + salario*afpTrabajador + "$");
+        System.out.println("El trabajador en concepto de empleador, paga a las AFP: " + salario*afpEmpleador + "$");
     }
 }
