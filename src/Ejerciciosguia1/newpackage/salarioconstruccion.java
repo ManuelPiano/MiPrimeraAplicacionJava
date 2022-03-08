@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Ejerciciosguia1.newpackage;
 
-/**
- *
- * @author ITCA
- */
+
 public class salarioconstruccion {
-    
+    public static void main(String[] args) {
+        double jornadaNormal, horasExtras, ValorHorasExtras, diasLaborales, salario;
+        
+        jornadaNormal = 10;
+        horasExtras = 50;
+        ValorHorasExtras = 0.1*jornadaNormal*horasExtras;
+        diasLaborales = 28;
+        salario = jornadaNormal*diasLaborales;
+       
+        System.out.println("El pago total sin hora extras es de : $" + jornadaNormal*diasLaborales );
+        System.out.println("el pago con horas extras es : $" + (salario+ValorHorasExtras));
+    }
 }
